@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bank-dashboard.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+
+    </head>
+    <body>
+        <!-- <div class="body">
+            <div class="ball"></div>
+
+        </div> -->
+        <div class="body">
+            <div class="brand-logo">
+                <i class="fa-brands fa-accusoft"></i>
+            </div>
+            <div class="sidenav">
+                <div class="navs">
+                    <span><i class="fa-solid fa-chart-line"></i></span>
+                    <span>Analytics</span>
+                </div>
+                <div class="navs">
+                    <span><i class="fa-solid fa-clipboard-question"></i></span>
+                    <span>Queries</span>
+                </div>
+                <div class="navs">
+                    <span><i class="fa-solid fa-people-group"></i></span>
+                    <span>Clients</span>
+                </div>
+                <div class="navs">
+                    <span><i class="fa-solid fa-inbox"></i></span>
+                    <span>Inbox</span>
+                </div>
+                <div class="nav-special">
+                    <span><i class="fa-regular fa-file-lines"></i></span>
+                    <span>Documents</span>
+                </div>
+                <div class="navs">
+                    <span><i class="fa-solid fa-gear"></i></span>
+                    <span>Settings</span>
+                </div>
+            </div>
+            <div class="logout">
+                <div class="nav-logout">
+                    <span><i class="fa-solid fa-arrow-right-from-bracket"></i></span>
+                    <span>Logout</span>
+                </div>
+            </div>
+            <div class="mainboard">
+                <div class="header">
+                    <div class="search">
+                        <input type="text" placeholder="Search">
+                        <i class="fa fa-search"></i>
+                    </div>
+                    <div class="options">
+                        <p>Feedback<P>
+                        <p>Contact</p>
+                        <p>Support</p>
+                    </div>
+                    <div class="account">
+                        <p><strong>Hello,Richard Park</strong></p>
+                        <i class="fa-solid fa-user"></i>
+                        <i class="fa fa-envelope"></i>
+                        <i class="fa fa-bell"></i>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="bxone">
+                        <i class="fa-solid fa-credit-card"></i>
+                        <div class="text">
+                            <p><strong>$49,503</strong></p>
+                            <p class="bxtext">Available balance</p>
+                        </div>
+                    </div>
+                    <div class="bxtwo">
+                        <i class="fa-solid fa-coins"></i>
+                        <div class="text">
+                            <p><strong>$7,403</strong></p>
+                            <p class="bxtext">Local income</p>
+                        </div>
+                    </div>
+                    <div class="bxthree">
+                        <i class="fa-solid fa-magnifying-glass-dollar"></i>
+                        <div class="text">
+                            <p><strong>6.35%</strong></p>
+                            <p class="bxtext">Income Tax Revenue</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bigbox">
+                    <div class="bgbox">
+                        <div class="top">
+                            <p><strong>Balance Content</strong></p>
+                            <div class="divtime">
+                                <div class="time"><strong>week</strong></div>
+                                <div class="special"><strong>Month</strong></div>
+                                <div class="time"><strong>Year</strong></div>
+                            </div>
+                        </div>
+                        <div class="graph">
+                           <div class="curve-two"></div>
+                           <div class="curve-three"></div>
+                           <div class="curve-four"></div>
+                           <div class="curve-five"></div>
+                           <div class="curve-six"></div>
+                           <div class="curve-indicator">
+                               <p>Income</p>
+                           </div>
+                           <p class="arrow-down"></p>
+                           <div class="curve-indicator-up">
+                               <p>Expense</p>
+                           </div>
+                           <p class="arrow-up"></p>
+                        </div>
+                    </div>
+                    <div class="rightpanel">
+                        <div class="smbox">
+                            <div class="top">
+                                <p><strong>Income</strong></p>
+                                <i class="fa fa-ellipsis"></i>
+                            </div>
+                            <div class="chart">
+                                <div class="chart-a"></div>
+                                <div class="chart-b"></div>
+                                <div class="chart-c"></div>
+                                <div class="chart-d"></div>
+
+                            </div>
+                            <div class="underline"></div>
+                            <div class="chart-indicator">
+                                <p>$3206</p>
+                            </div>
+                            <p class="arrow-down"></p>
+                        </div>
+                        <div class="sm2box">
+                            <div class="top">
+                                <p><strong>Expense</strong></p>
+                                <i class="fa fa-ellipsis"></i>
+                            </div>
+                            <div class="chart2">
+                                <div class="chart-e"></div>
+                                <div class="chart-f"></div>
+                                <div class="chart-g"></div>
+                                <div class="chart-h"></div>
+                            </div>
+                            <div class="underline2"></div>
+                            <div class="chart-indicator">
+                                <p>$1600</p>
+                            </div>
+                            <p class="arrow-down"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lastpanel">
+                    <div class="box1">
+                        <div class="top">
+                            <p><strong>Credit limit</strong></p>
+                            <i class="fa fa-ellipsis"></i>
+                        </div>
+                        <div class="limit">
+                            <span><strong>1500</strong></span>
+                            <span class="smallspan">/2000 USD</span>
+                        </div>
+                        <div>
+                            <input class="progress" type="range" min="20" max="100" value="85" step="5" name="range" id="">
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <div class="top">
+                            <p><strong>Online limit</strong></p>
+                            <i class="fa fa-ellipsis"></i>
+                        </div>
+                        <div class="limit">
+                            <span><strong>1280</strong></span>
+                            <span class="smallspan">/1500 USD</span>
+                        </div>
+                        <div>
+                            <input class="progress" type="range" name="range" min="20" max="100" value="85" step="5" id="">
+                        </div>
+                    </div>
+                </div>
+                <div class="rightside">
+                    <div class="yourcard"> <p><strong>Your Cards</strong></p></div>
+                    <div class="card">
+                        <div class="cardtype">
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                            <span>Mastercard</span>
+                        </div>
+                        <p class="small">Richard Park</p>
+                        <p><strong>1234 **** **** 7890</strong></p>
+                        <p class="small">09/27</p>
+                    </div>
+                    <div class="addcard">
+                        <p>+ Add Card</p>
+                    </div>
+                    <div class="transactions">
+                        <div class="transactiontop">
+                            <p><strong>Recent transactions</strong></p>
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <div class="info">
+                            <i class="fa-solid fa-bag-shopping bag"></i>
+                            <div class="detail">
+                                <p><strong class="usage"> Home Shopping</strong></p>
+                                <p class="small">02/06/2022</p>
+                            </div>
+                            <span>-100 $</span>
+                        </div>
+                        <div class="info">
+                            <i class="fa-solid fa-plane plane"></i>
+                            <div class="detail">
+                                <p><strong class="usage">Travel Booking</strong></p>
+                                <p class="small">02/06/2022</p>
+                            </div>
+                            <span>-240 $</span>
+                        </div>
+                        <div class="info">
+                            <i class="fa-solid fa-money-bill-transfer transfer"></i>
+                            <div class="detail">
+                                <p><strong class="usage">Bank Transfer</strong></p>
+                                <p class="small">02/06/2022</p>
+                            </div>
+                            <span class="green">+440 $</span>
+                        </div>
+                        <div class="info">
+                            <i class="fa-solid fa-gifts gift"></i>
+                            <div class="detail">
+                                <p><strong class="usage">Gift Purchase</strong></p>
+                                <p class="small">02/06/2022</p>
+                            </div>
+                            <span>-102 $</span>
+                        </div>
+                        <div class="info">
+                            <i class="fa-solid fa-truck-fast truck"></i>
+                            <div class="detail">
+                                <p><strong class="usage">Home Delivery</strong></p>
+                                <p class="small">02/06/2022</p>
+                            </div>
+                            <span>-50 $</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </body>
+</html>
