@@ -607,7 +607,7 @@ html,body {
     -webkit-appearance: none;
     background: white;
 }
-@media (max-width:1240px){
+ @media only screen and (max-width:1240px){
     .bgbox {
         margin-left: 24px;
         width: 600px;
@@ -639,13 +639,13 @@ html,body {
      }
 
 }
-@media(max-width:1165px){
+@media only screen and(max-width:1165px){
     .box1,.box2 {
         width: 320px;
     }
     
 }
-@media (max-width:1149px) {
+@media only screen and (max-width:1149px) {
     .brand-logo {
         margin-right: -90px;
      }
@@ -689,7 +689,6 @@ html,body {
         display: flex;
         justify-content: space-between;
         margin-top: 60px;
-        /* background-color: #15ce15; */
     }
     .bxone {
         width: 170px !important;
@@ -716,7 +715,7 @@ html,body {
         margin-right: 47px;
     }
     .lastpanel {
-        /* background-color: red; */
+        
         margin-top: 70px;
         width: 67%;
     }
@@ -755,17 +754,17 @@ html,body {
         margin-right: 30px;
     }
     .bxone,.bxtwo,.bxthree {
-        width: 170px;
+        width: 155px;
         font-size: small;
     }
     .box {
-        width: 550px;
+        width: 530px;
         display: flex;
         justify-content: space-between;
         margin-top: 60px;
     }
     .bxone {
-        width: 170px !important;
+        width: 155px !important;
     }
     .rightpanel {
         display: flex;
@@ -810,10 +809,82 @@ html,body {
     .rightside {
         height: 797px;
     }
-}
-@media (max-width:768px){
-    .rightside .card {
-        position: sticky;
-        top: 70px;
+} 
+@media screen and (max-width:946px) {
+    .box {
+        max-width: 490px;
+        min-width: 460px;
+        overflow-x: scroll;
+    }
+    .box .bxone,.bxtwo,.bxthree {
+        min-width: 140px;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .box i {
+        font-size: 24px;
+        margin-left: 10px;
+    }
+    .box p strong {
+        font-size: 16px;
+    }
+    .box .text {
+        margin-right: 3px;
+    }
+    .rightside {
+        margin-right: 13px;
+    }
+    .rightpanel .sm2box,.rightpanel .smbox {
+        width: 190px;
+    }
+    .rightpanel .smbox {
+        margin-left: 15px;
+    }
+    .lastpanel .box1,.lastpanel .box2 {
+        width: 190px;
+    }
+    .logout {
+        margin-right: 13px;
     }
 }
+/*@media screen and (max-width:860px) {
+    .box {
+        width: 450px;
+        overflow-x: scroll;
+    }
+    .box .bxone,.bxtwo,.bxthree {
+        width: 140px;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .box i {
+        font-size: 24px;
+        margin-left: 10px;
+    }
+    .box p strong {
+        font-size: 16px;
+    }
+    .box .text {
+        margin-right: 3px;
+    }
+    .box .bxone {
+        width: 140px !important;
+    }
+    .bigbox {
+        width: 65% ;
+    }
+    .rightside {
+        background-color: green;
+        margin-right: 0;
+    }
+    .rightside .card {
+        width: 170px;
+    }
+    .rightside .addcard {
+        width:100px ;
+    }    
+}*/
