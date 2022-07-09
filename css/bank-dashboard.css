@@ -607,6 +607,18 @@ html,body {
     -webkit-appearance: none;
     background: white;
 }
+.bank-card {
+    display: none;
+}
+.bank-card .rightside {
+    position: absolute;
+}
+.account-option {
+    display: none;
+}
+.account-option .account-option-container {
+    position: absolute;
+}
  @media only screen and (max-width:1240px){
     .bgbox {
         margin-left: 24px;
@@ -813,8 +825,6 @@ html,body {
 @media screen and (max-width:946px) {
     .box {
         max-width: 490px;
-        min-width: 460px;
-        overflow-x: scroll;
     }
     .box .bxone,.bxtwo,.bxthree {
         min-width: 140px;
@@ -849,13 +859,12 @@ html,body {
         margin-right: 13px;
     }
 }
-/*@media screen and (max-width:860px) {
+@media screen and (max-width:860px) {
     .box {
-        width: 450px;
-        overflow-x: scroll;
+        width: 440px;
     }
     .box .bxone,.bxtwo,.bxthree {
-        width: 140px;
+        width: 125px;
         height: 100px;
         display: flex;
         justify-content: space-between;
@@ -872,19 +881,228 @@ html,body {
         margin-right: 3px;
     }
     .box .bxone {
-        width: 140px !important;
+        width: 125px !important;
     }
     .bigbox {
-        width: 65% ;
+        width: 71%;
     }
     .rightside {
-        background-color: green;
         margin-right: 0;
+    }
+    .rightside .yourcard {
+        margin-left: 16px;
     }
     .rightside .card {
         width: 170px;
+        margin-left: 20px;
     }
     .rightside .addcard {
-        width:100px ;
+        width:100px;
+    }
+    .rightside .transactions{
+        width:185px;
+        margin-left: 15px;
+        padding-left:10px ;
     }    
-}*/
+    .rightside .transactions i {
+        margin-right: 20px;
+    }
+    .bigbox .smbox,.bigbox .sm2box {
+        width: 190px;
+    }
+    .bigbox .smbox {
+        margin-right: 5px;
+    }
+    .lastpanel .box1,.lastpanel .box2 {
+        width: 170px;
+    }
+    .sidenav {
+        font-weight: bold;
+    }
+    .logout{
+        margin-right: 9px;
+    }
+    .logout i {
+        margin-left: 5px;
+    }
+    .brand-logo {
+        margin-right: -80px;
+    }
+}
+@media screen and (max-width:789px) {
+    .header .options,.header .account {
+        display: none;
+    }
+    .rightside {
+        display: none;
+    }
+    .header .bank-card {
+        display: inherit;
+        border: transparent;
+        height: 30px;
+        background: linear-gradient(to top,#5252ff,#ff539b);
+        color: #202020;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+}
+    .header .bank-card:focus .rightside {
+        display: block;
+    } 
+    .header .bank-card {
+        padding: 8px;
+        color: white;
+    }
+    .header .bank-card .rightside {
+        margin-top: 20px;
+        margin-left: -90px;
+        height: 640px;
+        padding-bottom: 15px;
+        border-radius: 9px;
+        color: black;
+        padding: 9px;
+        /*background: linear-gradient(225deg,#5252ff,#ff539b);
+        */background-color: #e4e4e4;
+        box-shadow: -2px 0px 2px #8b8989;
+        position: absolute;
+        right: 13px;
+        top: 31px;
+        -webkit-border-radius: 9px;
+        -moz-border-radius: 9px;
+        -ms-border-radius: 9px;
+        -o-border-radius: 9px;
+}
+    .header .bank-card .rightside .transactions {
+        margin-top: 65px;
+        padding-top: 0px;
+        height: 280px;
+        box-shadow: 0px 0px 4px black,0px 3px 2px white;
+        position: static;
+    }
+    .header .bank-card .rightside .card {
+        margin-top: 15px;
+        position: static;
+    }
+    .body .mainboard {
+        width: 80%;
+        overflow-x: hidden;
+    }
+    .mainboard .header {
+        width: 80%;
+        height: 50px;
+    }
+    .box {
+        width: 100%;
+        min-width: 50%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .box .bxone,.box .bxtwo,.box .bxthree {
+        width: 160px;
+    }
+    .bigbox {
+        width: 100%;
+    }
+    .lastpanel {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .lastpanel .box1 {
+        width: 200px;
+    }
+    .lastpanel .box2 {
+        width: 200px;
+        margin-right: 65px;
+    }
+    .lastpanel .box1 {
+        margin-left: -5px;
+        /* margin-right: 40px; */
+    }
+    .brand-logo {
+        margin-right: -75px;
+    }
+    .sidenav {
+        margin-right: -8px;
+    }
+    .logout {
+        
+        margin-right: 25px;
+    }
+    .header .search {
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    .header .account-option {
+        display: block;
+    }
+    .header .account-option-container {
+        height: fit-content;
+        width: 230px;
+        padding: 10px;
+        /* background-color: #e4e4e4; */
+        box-shadow: -2px 0px 2px #c9c9c9;
+        display: none;
+        background: linear-gradient(#5252ff,#ff539b);
+        right: 17px;
+        top: 53px;
+        box-shadow: 0px 0px 4px black;
+    }
+    .header .account-option:focus .account-option-container {
+        display: block;
+    }
+    .header .account-option .account-option-container .account {
+        height: fit-content;
+        width: 230px;
+        border: 1px solid transparent;
+        border-bottom: 1px solid black;
+        border-left: 1px solid black;
+        display: inline-block;
+        padding-bottom: 10px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+}
+    .header .account-option .account-option-container .account .account-name {
+        font-size: 19px;
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-around;     
+    }
+    .header .account-option .account-option-container .account .account-chat {
+        font-size: 15px;
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .header .account-option .account-option-container .account .account-notification {
+        font-size: 15px;
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .header .account-option .account-option-container .options {
+        display: inline-block;
+        height: fit-content;
+        font-size: 15px;
+        border: 1px solid transparent;
+        width: 230px;
+        border-radius: 10px;
+        margin-top: -2px;
+        border-top: 1px solid black;
+        border: 1px solid transparent;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        border-left: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+
+}
