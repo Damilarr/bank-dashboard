@@ -607,17 +607,26 @@ html,body {
     -webkit-appearance: none;
     background: white;
 }
-.bank-card {
+.mainboard .header .bank-card {
     display: none;
 }
-.bank-card .rightside {
+.mainboard .header .bank-card .rightside {
     position: absolute;
 }
-.account-option {
+.mainboard .header .account-option {
     display: none;
 }
-.account-option .account-option-container {
+.mainboard .header .account-option .account-option-container {
     position: absolute;
+}
+.mainboard .chart-buttons button {
+    display: none;
+}
+.mainboard .graph-box {
+    display: none;
+}
+.mainboard .query-lastpanel {
+    display: none;
 }
  @media only screen and (max-width:1240px){
     .bgbox {
@@ -864,7 +873,7 @@ html,body {
         width: 440px;
     }
     .box .bxone,.bxtwo,.bxthree {
-        width: 125px;
+        min-width: 125px;
         height: 100px;
         display: flex;
         justify-content: space-between;
@@ -881,7 +890,7 @@ html,body {
         margin-right: 3px;
     }
     .box .bxone {
-        width: 125px !important;
+        min-width: 125px !important;
     }
     .bigbox {
         width: 71%;
@@ -936,9 +945,9 @@ html,body {
     .rightside {
         display: none;
     }
-    .header .bank-card {
+    .mainboard .header .bank-card {
         display: inherit;
-        border: transparent;
+        border: 1px solid #8f8f8f;
         height: 30px;
         background: linear-gradient(to top,#5252ff,#ff539b);
         color: #202020;
@@ -948,14 +957,14 @@ html,body {
         -ms-border-radius: 3px;
         -o-border-radius: 3px;
 }
-    .header .bank-card:focus .rightside {
+    .mainboard .header .bank-card:focus .rightside {
         display: block;
     } 
-    .header .bank-card {
+    .mainboard .header .bank-card {
         padding: 8px;
         color: white;
     }
-    .header .bank-card .rightside {
+    .mainboard .header .bank-card .rightside {
         margin-top: 20px;
         margin-left: -90px;
         height: 640px;
@@ -963,9 +972,9 @@ html,body {
         border-radius: 9px;
         color: black;
         padding: 9px;
-        /*background: linear-gradient(225deg,#5252ff,#ff539b);
-        */background-color: #e4e4e4;
-        box-shadow: -2px 0px 2px #8b8989;
+        background: linear-gradient(225deg,#5252ff,#ff539b);
+        /*background-color: #e4e4e4;
+        */box-shadow: -2px 0px 2px #8b8989;
         position: absolute;
         right: 13px;
         top: 31px;
@@ -974,14 +983,14 @@ html,body {
         -ms-border-radius: 9px;
         -o-border-radius: 9px;
 }
-    .header .bank-card .rightside .transactions {
+    .mainboard .header .bank-card .rightside .transactions {
         margin-top: 65px;
         padding-top: 0px;
         height: 280px;
         box-shadow: 0px 0px 4px black,0px 3px 2px white;
         position: static;
     }
-    .header .bank-card .rightside .card {
+    .mainboard .header .bank-card .rightside .card {
         margin-top: 15px;
         position: static;
     }
@@ -1030,17 +1039,20 @@ html,body {
         
         margin-right: 25px;
     }
-    .header .search {
+    .mainboard .header .search {
         border-radius: 10px;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
-    }
-    .header .account-option {
+        height: 10px;
+        width: 35%;
+}
+    .mainboard .header .account-option {
         display: block;
+        height: 30px;
     }
-    .header .account-option-container {
+    .mainboard .header .account-option-container {
         height: fit-content;
         width: 230px;
         padding: 10px;
@@ -1052,10 +1064,11 @@ html,body {
         top: 53px;
         box-shadow: 0px 0px 4px black;
     }
-    .header .account-option:focus .account-option-container {
+    .mainboard .header .account-option:focus .account-option-container {
         display: block;
+        outline: none;
     }
-    .header .account-option .account-option-container .account {
+    .mainboard .header .account-option .account-option-container .account {
         height: fit-content;
         width: 230px;
         border: 1px solid transparent;
@@ -1069,25 +1082,25 @@ html,body {
         -ms-border-radius: 10px;
         -o-border-radius: 10px;
 }
-    .header .account-option .account-option-container .account .account-name {
+    .mainboard .header .account-option .account-option-container .account .account-name {
         font-size: 19px;
         margin-top: 15px;
         display: flex;
         justify-content: space-around;     
     }
-    .header .account-option .account-option-container .account .account-chat {
+    .mainboard .header .account-option .account-option-container .account .account-chat {
         font-size: 15px;
         margin-top: 15px;
         display: flex;
         justify-content: space-evenly;
     }
-    .header .account-option .account-option-container .account .account-notification {
+    .mainboard .header .account-option .account-option-container .account .account-notification {
         font-size: 15px;
         margin-top: 15px;
         display: flex;
         justify-content: space-evenly;
     }
-    .header .account-option .account-option-container .options {
+    .mainboard .header .account-option .account-option-container .options {
         display: inline-block;
         height: fit-content;
         font-size: 15px;
@@ -1103,6 +1116,131 @@ html,body {
         -o-border-radius: 10px;
         border-left: 1px solid black;
         border-bottom: 1px solid black;
+    }
+
+}
+@media screen and (max-width:650px) {
+    .mainboard .box {
+        min-width: 350px;
+        max-width: 480px;
+        justify-content: space-between;
+    }
+    .mainboard .box .bxtwo,.bxthree {
+        max-width:90px;
+        min-width: 60px;
+        height: 80px;
+        display: block;
+    }
+    .mainboard .box .bxthree {
+        margin-right: 50px;
+    }
+    .mainboard .box .bxone {
+        height: 80px;
+        max-width: 60px;
+        display: block;
+    } 
+    .mainboard .box i {
+        font-size: 15px;
+        margin-left: 30px;
+        margin-top: 3px;
+    }
+    .mainboard .box .text p{
+        font-size: 10px;
+        margin-left: 25px;
+    }
+    .bigbox .rightpanel {
+        display: none;
+    }
+    .mainboard button .smbox,.mainboard button .sm2box {
+        position: absolute;
+    }
+    .mainboard .chart-buttons button {
+        display: flex;
+        box-shadow: 0px 0px 5px #868585;
+        background-color: white;
+        padding: 8px;
+        border: 1px solid #c9c9c9;
+    }
+    .mainboard .chart-buttons {
+        display: flex;
+        width: 84%;
+        padding-left: 20px;
+        justify-content: space-between;
+
+    }
+    .mainboard .chart-buttons button:focus .smbox {
+        display: block;
+    }
+    .mainboard .chart-buttons button:focus .sm2box {
+        display: block;
+    }
+    .mainboard .chart-buttons button .smbox {
+        display: none;
+        width: 220px;
+        top: 619px;
+        left: -8px;
+        z-index: 3;
+        box-shadow: 0px 0px 100px #000;
+    }
+    .mainboard .chart-buttons button .sm2box {
+        display: none;
+        width: 200px;
+        top: 730px;
+        right: -65px;
+        box-shadow: 0px 0px 100px #000;
+    }
+    .bigbox {
+        display: none;
+    }
+    .mainboard .graph-box {
+        display: flex;
+        width: 100%;
+        height: fit-content;
+    }
+    .mainboard .graph-box .bgbox {
+       min-width: 80% !important;
+    }
+     .mainboard .lastpanel {
+       display: none;
+    }
+    .mainboard .query-lastpanel {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        height: 250px;
+        margin-top: 35px;
+    }
+    .mainboard .query-lastpanel .box1 {
+        margin-left: 15px;
+        width: 80%;
+        height: 100px;
+    }
+    .mainboard .query-lastpanel .box1 input {
+        width: 85%;
+    }
+    .mainboard .query-lastpanel .box2 {
+        margin-left: 15px;
+        height: 100px;
+        width: 80%;
+    }
+    .mainboard .query-lastpanel .box2 input {
+        width: 85%;
+    }
+    .mainboard .query-lastpanel .smallspan {
+        font-size: smaller;
+    }
+    .brand-logo {
+        margin-right: -80px;
+    }
+    .sidenav {
+        margin-right: -25px;
+        font-size: 8px;
+    }
+    .logout {
+        margin-right: 23px;
+    }
+    .logout i {
+        margin-left: 5px;
     }
 
 }
