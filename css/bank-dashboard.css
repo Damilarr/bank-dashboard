@@ -406,9 +406,13 @@ html,body {
     box-shadow: 0px 2px 2px #3f3e3e;
     border-radius: 10px;
     margin-top: -20px;
-    margin-left: 47px; 
+    margin-left: 47px;
     margin-right: 70px;
     padding: 5px 10px 5px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 .graph .curve-two {
     height: 290px;
@@ -578,6 +582,10 @@ html,body {
     box-shadow: 0px 2px 2px #3f3e3e;
     border-radius: 10px;
     padding: 0px 10px 0px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 .lastpanel .smallspan {
     font-size: 11px;
@@ -607,11 +615,16 @@ html,body {
     -webkit-appearance: none;
     background: white;
 }
+* button{
+    outline: none;
+    
+}
 .mainboard .header .bank-card {
     display: none;
 }
 .mainboard .header .bank-card .rightside {
     position: absolute;
+    overflow-y: scroll;
 }
 .mainboard .header .account-option {
     display: none;
@@ -626,6 +639,15 @@ html,body {
     display: none;
 }
 .mainboard .query-lastpanel {
+    display: none;
+}
+.body .mainboard{
+    height: fit-content;
+}
+.body{
+    height: fit-content;
+}
+.body .mainboard .box-new {
     display: none;
 }
  @media only screen and (max-width:1240px){
@@ -658,11 +680,23 @@ html,body {
      .logout {
         margin-right: 34px;
      }
+     .body .mainboard{
+        height: fit-content;
+    }
+    .body{
+        height: fit-content;
+    }
 
 }
 @media only screen and(max-width:1165px){
     .box1,.box2 {
         width: 320px;
+    }
+    .body .mainboard{
+        height: fit-content;
+    }
+    .body{
+        height: fit-content;
     }
     
 }
@@ -693,6 +727,12 @@ html,body {
      .logout{
         margin-right: 28px;
      }
+     .body .mainboard{
+        height: fit-content;
+    }
+    .body{
+        height: fit-content;
+    }
      
 
     
@@ -767,6 +807,12 @@ html,body {
         display: flex;
         justify-content: space-between;
     }
+    .body .mainboard{
+        height: fit-content;
+    }
+    .body{
+        height: fit-content;
+    }
 }
 @media only screen and (max-width:981px){
     .rightside{
@@ -830,6 +876,12 @@ html,body {
     .rightside {
         height: 797px;
     }
+    .body .mainboard{
+        height: fit-content;
+    }
+    .body{
+        height: fit-content;
+    }
 } 
 @media screen and (max-width:946px) {
     .box {
@@ -866,6 +918,12 @@ html,body {
     }
     .logout {
         margin-right: 13px;
+    }
+    .body .mainboard{
+        height: fit-content;
+    }
+    .body{
+        height: fit-content;
     }
 }
 @media screen and (max-width:860px) {
@@ -937,6 +995,12 @@ html,body {
     .brand-logo {
         margin-right: -80px;
     }
+    .body .mainboard{
+        height: fit-content;
+    }
+    .body{
+        height: fit-content;
+    }
 }
 @media screen and (max-width:789px) {
     .header .options,.header .account {
@@ -949,7 +1013,7 @@ html,body {
         display: inherit;
         border: 1px solid #8f8f8f;
         height: 30px;
-        background: linear-gradient(to top,#5252ff,#ff539b);
+        background: linear-gradient(to right,#2929fa,#ff539b);
         color: #202020;
         border-radius: 3px;
         -webkit-border-radius: 3px;
@@ -967,12 +1031,12 @@ html,body {
     .mainboard .header .bank-card .rightside {
         margin-top: 20px;
         margin-left: -90px;
-        height: 640px;
+        height: fit-content;
         padding-bottom: 15px;
         border-radius: 9px;
         color: black;
         padding: 9px;
-        background: linear-gradient(225deg,#5252ff,#ff539b);
+        background: linear-gradient(to right,#2929fa,#ff539b);
         /*background-color: #e4e4e4;
         */box-shadow: -2px 0px 2px #8b8989;
         position: absolute;
@@ -984,7 +1048,7 @@ html,body {
         -o-border-radius: 9px;
 }
     .mainboard .header .bank-card .rightside .transactions {
-        margin-top: 65px;
+        margin-top: 25px;
         padding-top: 0px;
         height: 280px;
         box-shadow: 0px 0px 4px black,0px 3px 2px white;
@@ -993,6 +1057,7 @@ html,body {
     .mainboard .header .bank-card .rightside .card {
         margin-top: 15px;
         position: static;
+        height: fit-content;
     }
     .body .mainboard {
         width: 80%;
@@ -1059,7 +1124,7 @@ html,body {
         /* background-color: #e4e4e4; */
         box-shadow: -2px 0px 2px #c9c9c9;
         display: none;
-        background: linear-gradient(#5252ff,#ff539b);
+        background: linear-gradient(to right,#2929fa,#ff539b);
         right: 17px;
         top: 53px;
         box-shadow: 0px 0px 4px black;
@@ -1117,34 +1182,40 @@ html,body {
         border-left: 1px solid black;
         border-bottom: 1px solid black;
     }
+    .body .mainboard{
+        height: fit-content;
+    }
+    .body{
+        height: fit-content;
+    }
 
 }
 @media screen and (max-width:650px) {
-    .mainboard .box {
+    .body .mainboard .box {
         min-width: 350px;
         max-width: 480px;
         justify-content: space-between;
     }
-    .mainboard .box .bxtwo,.bxthree {
+    .body .mainboard .box .bxtwo,.bxthree {
         max-width:90px;
         min-width: 60px;
         height: 80px;
         display: block;
     }
-    .mainboard .box .bxthree {
+    .body .mainboard .box .bxthree {
         margin-right: 50px;
     }
-    .mainboard .box .bxone {
+    .body .mainboard .box .bxone {
         height: 80px;
         max-width: 60px;
         display: block;
     } 
-    .mainboard .box i {
+    .body .mainboard .box i {
         font-size: 15px;
         margin-left: 30px;
         margin-top: 3px;
     }
-    .mainboard .box .text p{
+    .body .mainboard .box .text p{
         font-size: 10px;
         margin-left: 25px;
     }
@@ -1156,7 +1227,7 @@ html,body {
     }
     .mainboard .chart-buttons button {
         display: flex;
-        box-shadow: 0px 0px 5px #868585;
+        box-shadow: 0px 0px 5px black;
         background-color: white;
         padding: 8px;
         border: 1px solid #c9c9c9;
@@ -1176,11 +1247,13 @@ html,body {
     }
     .mainboard .chart-buttons button .smbox {
         display: none;
-        width: 220px;
+        width: 200px;
         top: 619px;
         left: -8px;
         z-index: 3;
         box-shadow: 0px 0px 100px #000;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     .mainboard .chart-buttons button .sm2box {
         display: none;
@@ -1242,5 +1315,115 @@ html,body {
     .logout i {
         margin-left: 5px;
     }
+    .body .mainboard{
+        height: fit-content;
+    }
+    .body{
+        height: fit-content;
+    }
 
+}
+@media screen and (max-width:445px) {
+    .body .mainboard .box {
+        display: none;
+    }
+    .body .mainboard .box-new {
+        display: flex;
+    }
+    .body .mainboard .box-new {
+        max-width: 490px;
+        min-width: 290px;
+        height: 250px;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .body .mainboard .box-new .new-bxone,.body .mainboard .box-new .new-bxtwo,.body .mainboard .box-new .new-bxthree {
+        height: 120px;
+        /*max-width: 120px;
+        */width: fit-content;
+        background-color: white;
+        border: 1px solid #c9c9c9;
+        display: block;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        padding: 10px 5px 0px;
+        box-shadow: 0px 0px 3px #7c7c7c,0px 1px 4px #7a7878;
+}
+    .body .mainboard .box-new .new-bxthree {
+        position: relative;
+        right: 10px;
+    }
+    .body .mainboard .box-new .new-bxtwo {
+        position: relative;
+        left: -8px;
+    }
+    .body .mainboard .box-new .new-bxone:hover,.body .mainboard .box-new .new-bxtwo:hover,.body .mainboard .box-new .new-bxthree:hover {
+        transform: scale(1.14);
+        -webkit-transform: scale(1.14);
+        -moz-transform: scale(1.14);
+        -ms-transform: scale(1.14);
+        -o-transform: scale(1.14);
+        margin-right: 20px;
+        margin-left: 10px;
+        transition: 1s all;
+        -webkit-transition: 1s all;
+        -moz-transition: 1s all;
+        -ms-transition: 1s all;
+        -o-transition: 1s all;
+    }
+    .new-bxone i,.new-bxtwo i,.new-bxthree i {
+        color: blue;
+        text-shadow: -3px 0px 3px #8c8cf5,0px 3px 3px #8c8cf5;
+        font-size: 20px;
+    }
+    .box strong {
+        font-size: larger;
+        text-shadow: 0px 0px 1px black;
+    }
+    .new-bxtwo i {
+        color: orangered;
+        text-shadow: -3px 0px 3px orange,0px 3px 3px orange;
+    }
+    .new-bxthree i {
+        color: #2fbdec;
+        text-shadow: -3px 0px 3px lightblue,0px 4px 3px #b45508;
+    }
+    .bgbox strong{
+        font-size: 14px;
+
+    }
+    .graph-box .bgbox .top {
+        justify-content: space-between;
+        display: flex;
+    }
+    .graph-box .bgbox .divtime {
+        display: block;
+        width: 60px;
+        margin-top: 10px;
+    }
+    .sidenav-text,.nav-logout-text {
+        display: none;
+    }
+    .brand-logo {
+        margin-right: -60px;
+    }
+    .body .sidenav {
+        margin-right: -10px;
+        margin-top: 250px;
+    }
+    .logout {
+        margin-right: -20px;
+    }
+    .logout i,.sidenav i {
+        font-size: 20px;
+    } 
+    .body .mainboard .bank-card .rightside {
+        overflow-y: scroll;
+    }
+
+
+    
 }
