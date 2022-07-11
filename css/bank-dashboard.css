@@ -1425,8 +1425,8 @@ html,body {
     .body .mainboard .box-new {
         /* max-width: 490px;
         min-width: 290px; */
-        width: 160px;
-        /* background-color: #15ce15; */
+        width: 180px;
+        background-color: #15ce15;
         height: 150px;
         justify-content: space-around;
         align-items: center;
@@ -1434,7 +1434,7 @@ html,body {
         padding-top: 50px;
         margin-bottom: 23px;
         margin-left: 6px;
-        padding-left: 110px;
+        padding-left: 100px;
     }
     .body .mainboard .box-new .new-bxone,.body .mainboard .box-new .new-bxtwo,.body .mainboard .box-new .new-bxthree {
         min-height: 110px;
@@ -1453,9 +1453,16 @@ html,body {
 }
     .body .mainboard .box-new .new-bxthree {
         position: relative;
+        margin-right: 10px;
     }
     .body .mainboard .box-new .new-bxtwo {
         position: relative;
+        margin-right: 10px;
+    }
+    .body .mainboard .box-new .new-bxone {
+        position: relative;
+        margin-right: 10px;
+        margin-left: 30px;
     }
     .body .mainboard .box-new .new-bxone:hover {
         transform: scale(1.1);
@@ -1540,16 +1547,16 @@ html,body {
         -moz-transition: 1s all;
         -ms-transition: 1s all;
         -o-transition: 1s all;
-        transform: scale(1.2);
-        -webkit-transform: scale(1.2);
-        -moz-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-        -o-transform: scale(1.2);
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
         padding-left: 10px;
         padding-top: 8px;
         padding-bottom: 8px;
-        margin-left: -20px;
-    }
+        margin-left: -8px;
+}
 
 
     
