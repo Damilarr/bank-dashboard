@@ -49,6 +49,34 @@ html,body {
     color: #ececec;
     font-size: 13px;
 }
+.body .sidenav a:link,
+.body .sidenav a:visited {
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.body .sidenav a:hover,
+.body .sidenav a:active {
+    color: #c9c9c9;
+}
+.body .sidenav .navs:hover,.body .sidenav .nav-special:hover {
+    background-color: black;
+    transition: 1s all;
+    -webkit-transition: 1s all;
+    -moz-transition: 1s all;
+    -ms-transition: 1s all;
+    -o-transition: 1s all;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    padding-left: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: -12px;
+}
 .navs,.nav-special {
     margin-bottom: 40px;
 }
@@ -650,6 +678,14 @@ html,body {
 .body .mainboard .box-new {
     display: none;
 }
+.account-option .account-option-container .account .account-name:hover,.account-option .account-option-container .account .account-chat:hover,.account-option .account-option-container .account .account-notification:hover,.account-option .account-option-container .options p:hover {
+    transition: 1s all;
+    -webkit-transition: 1s all;
+    -moz-transition: 1s all;
+    -ms-transition: 1s all;
+    -o-transition: 1s all;
+    color:#2929fa;
+}
  @media only screen and (max-width:1240px){
     .bgbox {
         margin-left: 24px;
@@ -1013,7 +1049,6 @@ html,body {
         display: inherit;
         border: 1px solid #8f8f8f;
         height: 30px;
-        background: linear-gradient(to right,#2929fa,#ff539b);
         color: #202020;
         border-radius: 3px;
         -webkit-border-radius: 3px;
@@ -1024,9 +1059,18 @@ html,body {
     .mainboard .header .bank-card:focus .rightside {
         display: block;
     } 
+    .mainboard .header .bank-card:focus {
+        background: linear-gradient(to right,#2929fa,#ff539b);
+        transition: 1s all;
+        -webkit-transition: 1s all;
+        -moz-transition: 1s all;
+        -ms-transition: 1s all;
+        -o-transition: 1s all;
+        border: 1px solid;
+}
     .mainboard .header .bank-card {
         padding: 8px;
-        color: white;
+        color: black;
     }
     .mainboard .header .bank-card .rightside {
         margin-top: 20px;
@@ -1053,6 +1097,7 @@ html,body {
         height: 280px;
         box-shadow: 0px 0px 4px black,0px 3px 2px white;
         position: static;
+        height: fit-content;
     }
     .mainboard .header .bank-card .rightside .card {
         margin-top: 15px;
@@ -1116,7 +1161,12 @@ html,body {
     .mainboard .header .account-option {
         display: block;
         height: 30px;
-    }
+        transition: 1s all;
+        -webkit-transition: 1s all;
+        -moz-transition: 1s all;
+        -ms-transition: 1s all;
+        -o-transition: 1s all;
+}
     .mainboard .header .account-option-container {
         height: fit-content;
         width: 230px;
@@ -1133,6 +1183,20 @@ html,body {
         display: block;
         outline: none;
     }
+    .mainboard .header .account-option:focus {
+        background:linear-gradient(to right,#5252ff,#ff539b);
+        border: 1px solid #000;
+        border-radius: 3px;
+        transition: 1s all;
+        -webkit-transition: 1s all;
+        -moz-transition: 1s all;
+        -ms-transition: 1s all;
+        -o-transition: 1s all;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+}
     .mainboard .header .account-option .account-option-container .account {
         height: fit-content;
         width: 230px;
@@ -1422,6 +1486,23 @@ html,body {
     } 
     .body .mainboard .bank-card .rightside {
         overflow-y: scroll;
+    }
+    .body .sidenav .navs:hover,.body .sidenav .nav-special:hover {
+        background-color: black;
+        transition: 1s all;
+        -webkit-transition: 1s all;
+        -moz-transition: 1s all;
+        -ms-transition: 1s all;
+        -o-transition: 1s all;
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        padding-left: 10px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin-left: -20px;
     }
 
 
