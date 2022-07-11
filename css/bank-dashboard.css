@@ -1423,10 +1423,7 @@ html,body {
         display: flex;
     }
     .body .mainboard .box-new {
-        /* max-width: 490px;
-        min-width: 290px; */
         width: 180px;
-        background-color: #15ce15;
         height: 150px;
         justify-content: space-around;
         align-items: center;
