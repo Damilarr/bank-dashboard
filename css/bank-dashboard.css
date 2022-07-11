@@ -1067,6 +1067,7 @@ html,body {
         -ms-transition: 1s all;
         -o-transition: 1s all;
         border: 1px solid;
+        color: white;
 }
     .mainboard .header .bank-card {
         padding: 8px;
